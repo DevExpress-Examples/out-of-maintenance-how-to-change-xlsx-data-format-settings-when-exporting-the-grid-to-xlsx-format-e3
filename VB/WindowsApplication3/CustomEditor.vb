@@ -70,7 +70,7 @@ Namespace DXSample
 			End Try
 		End Sub
 
-		Public Overrides Function GetBrick(ByVal info As PrintCellHelperInfo) As DevExpress.XtraPrinting.IVisualBrick
+		Public Overrides Function GetBrick(ByVal info As PrintCellHelperInfo) As VisualBrick
 			Dim brick As TextBrick = TryCast(MyBase.GetBrick(info), TextBrick)
 			brick.XlsxFormatString = XlsxFormatString
 			Return brick
