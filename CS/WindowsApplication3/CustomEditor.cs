@@ -65,7 +65,7 @@ namespace DXSample
             }
         }
 
-        public override DevExpress.XtraPrinting.IVisualBrick GetBrick(PrintCellHelperInfo info)
+        public override VisualBrick GetBrick(PrintCellHelperInfo info)
         {
             TextBrick brick = base.GetBrick(info) as TextBrick;
             brick.XlsxFormatString = XlsxFormatString;
